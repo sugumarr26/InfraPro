@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 30%;
+    padding: 6px 10px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 7px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+
+
+
+<div>
+  <form action="../../cgi-bin/websphere/was_install.py">
+	<h4>Remote Server detail</h4>
+    <label for="sname">Server Name&nbsp;</label>
+    <input type="text" id="sname" name="sname">
+	</br>
+	<label for="uname">Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="uname" name="uname">
+	</br>
+    <label for="spasswd">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="password" id="spasswd" name="spasswd">
+	</br>
+	</br>	
+	
+	<h4>Details of user to be created</h4>
+	<label for="u_name">User&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="u_name" name="u_name">
+	</br>
+	<label for="u_group">Group ID&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="u_group" name="u_group">
+	</br>
+	<label for="u_iloc">Install location&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="u_iloc" name="u_iloc">
+	</br>
+	</br>
+    <input type="submit" value="Install">
+  </form>
+</div>
+
+</body>
+</html>
+
+

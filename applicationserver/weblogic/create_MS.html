@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 30%;
+    padding: 6px 10px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 7px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+body {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+
+
+
+
+  <form action="../../cgi-bin/weblogic/create_MS.py">
+	<h4>RemoteServer details</h4>
+    <label for="sname">Server Name&nbsp;</label>
+    <input type="text" id="sname" name="sname">
+	</br>
+	<label for="uname">Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="uname" name="uname">
+	</br>
+    <label for="spasswd">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="password" id="spasswd" name="spasswd">
+	</br>
+	</br>	
+	<h4>AdminServer details</h4>
+	<label for="a_sname">AdminServer&nbsp;</label>
+    <input type="text" id="a_sname" name="a_sname">
+	</br>
+	<label for="a_uname">AdminUser&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="a_uname" name="a_uname">
+	</br>
+    <label for="a_passwd">AdminPassword&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="password" id="a_passwd" name="a_passwd">
+	</br>
+	</br>
+	<h4>Details of Managed Server to be created</h4>
+	<label for="m_name">MS_Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="m_name" name="m_name">
+	</br>
+	<label for="m_addr">MS_Listen Address&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="m_addr" name="m_addr">
+	</br>
+	<label for="m_port">MS_Listen Port&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="m_port" name="m_port">
+	</br>
+	</br>
+    <input type="submit" value="Create">
+  </form>
+
+
+</body>
+</html>
+
+

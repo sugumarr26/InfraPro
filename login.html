@@ -1,0 +1,100 @@
+
+<html>
+<head>
+<title>AppAccess Login</title>
+ 
+<!--<script>document.getElementById("textfield").focus();</script>-->
+ <style>
+			.container {background: lightgrey;padding: 0px;}
+			.appaccess-seperator {height: 15px;float: left;width: 100%;}
+			.form-group.fleft{float:left;width:100%;}
+			</style>	
+<!---  UAT
+<link rel="stylesheet" type="text/css" href="/oamcustompages/pages/css/style.css" />
+<link rel="shortcut icon" href="/oamcustompages/pages/images/ico/Mphasis.ico" />
+<script type="text/javascript" src="/oamcustompages/pages/js/unameval.js"></script>
+<script type="text/javascript" src="/oamcustompages/pages/js/numeric.js"></script>
+-->
+
+</head>
+
+
+<body topmargin="0" style="background-image: body.jpg; background-repeat: repeat-y;background-size: 100% 100%;" >
+<form id="loginData" method='post' autocomplete="off" onsubmit="" action=''>
+<div class="container" style="overflow:hidden;background-color:whitesmoke">
+	<div class="text-center appaccess-header">
+				<img src="appaccess.jpg" style="width:100%";/>
+	</div>
+		<div class="appaccess-login-container">
+			<div class="appaccess-login-container" style="background-image: url(/Loginbg/BG.jpg);background-repeat: repeat-y;background-size: 100% 100%;">
+			<div class="login-container1">
+				<div class="row" style="margin:0px;">
+					<div class="col-md-6"></div>
+					<div class="col-md-5" style="height: 47%;margin-top:50px;">
+						<div class="form-group" style="padding-top:5%;">
+							<div class="col-xs-12 col-sm-12 col-md-12" style="color: #fff;font-size: 25px;margin-bottom: 10px;">
+								Log On
+							</div>
+						</div>
+						
+						<div style="float:left;width:100%">
+							<div class="form-group">
+								<div class="col-xs-12 col-sm-6 col-md-5"><label for="textfield" style="color:#fff;">Employee Number   :</label>	</div>
+								<div class="col-xs-12 col-sm-5 col-md-7">
+								<input class="form-control" style="font-size:11.5px;" name="username" id="textfield" maxlength="10" placeholder="Enter Employee Number (e.g. 1234567)" onkeypress="return noNumbers(event)"  onchange="changeNoNumbers()">
+												
+								</div>
+								<div class="col-xs-12 col-sm-1 col-md-1"></div>
+							</div>
+							<div class="appaccess-seperator"></div>
+							<div class="form-group">
+								<div class="col-xs-12 col-sm-6 col-md-5"><label for="password" style="color:#fff;">Password:</label></div>
+								<div class="col-xs-12 col-sm-5 col-md-7">
+									<input type="password" name="password" class="form-control" autocomplete="off" style="font-size:11.5px;" id="password" placeholder="Enter LAN ID Password">
+								</div>
+								<div class="col-xs-12 col-sm-1 col-md-1"><input type="hidden" name="request_id" value="-1552490987398798714"></div>
+							</div>
+							<div class="appaccess-seperator"></div>
+							<div class="form-group">
+								<div class="col-xs-12 col-sm-9 col-md-9"></div>
+								<div class="col-xs-12 col-sm-2 col-md-2">
+									<input  type="submit" value="Log On" class="btn btn-default" style="background-color:#e5e0e0;">
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>	
+               	<div style="margin-top: 35px;margin-bottom:50px;">
+							
+							
+							  <div class="row">
+									<div class="col-sm-6 col-md-5"></div>
+									<div class="col-sm-6 col-md-6" style="color:#fff">
+										<span>Forgot Password or Unlock Account? Please </span><a style="color:palevioletred;" href="https://unlock.mphasis.com" >Click here</a>
+									</div>
+									<div class="col-sm-4 col-md-4"></div>
+							  </div>
+							  <div class="row">
+									<div class="col-sm-6 col-md-5"></div>
+									<div class="col-sm-6 col-md-6" style="color:#fff">
+										<span>First-Time Users  </span><a style="color:palevioletred;"href="https://appaccess.mphasis.com/mphasis/pages/FirstTimeLoginUser.jsp" >Click here</a>
+									</div>
+									<div class="col-sm-4 col-md-4"></div>
+							  </div>
+						</div>
+									
+						</div>
+				  <div class="form-group fleft" style= "width:100%;margin-left:0px;width:100%;margin-bottom:0px;">
+						<div class="col-sm-10 col-md-10"    style="magrin-bottom:10px;width:100%;font-size: 8pt; background-color:#3391ac;color:#fff;text-align:center">
+							&copy; 2017  Mphasis Unleash the Next. All rights reserved
+						</div>
+						
+				  </div>
+			</div>
+		</div>	
+	</div>
+</div>
+</form>
+</body>
+</html>

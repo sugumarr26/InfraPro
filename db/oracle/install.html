@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 30%;
+    padding: 6px 10px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 7px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+body {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+
+  <form action="../../cgi-bin/database/install.py">
+  
+  <table border =0 width=100% >
+  <tr><td colspan=2>
+	<h4>RemoteServer details</h4></td></tr>
+	<tr><td width=15%>
+    <label for="sname">Server Name&nbsp;</label></td><td>
+    <input type="text" id="sname" name="sname"> &nbsp;</td></tr> 
+	<tr><td width=15%>
+	<label for="uname">Username</label> </td><td>
+    <input type="text" id="uname" name="uname">
+	</td></tr>
+	<tr><td width=15%>
+    <label for="spasswd">Password</label>
+	</td><td >
+    <input type="password" id="spasswd" name="spasswd">
+	</td></tr>
+	
+	<tr><td colspan=2>
+	
+	<h4>Install Parameters</h4>
+	</td></tr>
+	<tr><td>
+    <label for="i_dir">Inventory Directory&nbsp;</label>
+    </td>
+	<td>
+    
+	<input type="text" id="i_dir" name="i_dir">
+	</td></tr>
+	<tr><td>
+    
+	</br>
+	<label for="b_dir">Base Directory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    </td>
+	<td>
+    <input type="text" id="b_dir" name="b_dir">
+	</td></tr>
+	<tr><td>
+    
+    <label for="h_dir">Home Directory &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    </td><td>
+    <input type="text" id="h_dir" name="h_dir">
+	</td></tr>
+	<tr><td colspan=2>
+    
+    <input type="submit" value="Install">
+	</td></tr>
+	</table>
+  </form>
+</body>
+</html>
+
+
+
